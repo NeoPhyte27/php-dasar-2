@@ -40,6 +40,11 @@ LOOPING KEDUA
 Lakukan Looping Di Sini
 */
 
+// loopingan ascending
+echo "loopingan ascending<br>";
+for ($i = 2; $i <= 20; $i += 2){
+    echo $i. "- I Love PHP<br>";
+}
 
 
 echo "<h3>Soal No 2 Looping Array Modulo </h3>";
