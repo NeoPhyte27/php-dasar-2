@@ -15,12 +15,13 @@
         /*Soal No 1
         Greetings Buatlah sebuah function greetings() yang menerima satu parameter berupa string. contoh: greetings("abduh"); Output: "Halo Abduh, Selamat Datang di Garuda Cyber Institute!" */
         // Code function di sini
-        function greetings($name){
-            return "Halp " .ucfirst($name). ", Selamat Datang di Garuda Cyber Institute!";
+        function greetings($name)
+        {
+            return "Halp " . ucfirst($name) . ", Selamat Datang di Garuda Cyber Institute!";
         }
-        echo greetings("Bagas"). "<br>";
-        echo greetings("Wahyu"). "<br>";
-        echo greetings("Aldirisky Pratama"). "<br>";
+        echo greetings("Bagas") . "<br>";
+        echo greetings("Wahyu") . "<br>";
+        echo greetings("MUHAMMAD ALDI RIZKY PRATAMA") . "<br>";
 
         echo "<h3>Soal No 2 Reverse String</h3>";
         /*Soal No 2
@@ -28,17 +29,25 @@
         Buatlah sebuah function reverseString() untuk mengubah string berikut menjadi kebalikannya menggunakan function dan looping (for/while/do while). Function reverseString menerima satu parameter berupa string. NB: DILARANG menggunakan built-in function PHP sepert strrev(), HANYA gunakan LOOPING! reverseString("abdul"); Output: ludba
         */
         // Code function di sini
-        // Hapus komentar di bawah ini untuk jalankan Code
-        // reverseString("nama peserta");
-        // reverseString("Garuda Cyber Institute");
-        // reverseString("We Are GC-Ins Developer") echo
-        "<br>";
+        function reverseString($str)
+        {
+            $reversed = "";
+            $length = strlen($str);
+            for ($i = $length - 1; $i >= 0; $i--) {
+                $reversed .= $str[$i];
+            }
+            return $reversed;
+        }
+        echo reverseString("MUHAMMAD ALDI RIZKY PRATAMA") . "<br>";
+        echo reverseString("Garuda Cyber Institute") . "<br>";
+        echo reverseString("We Are GC-Ins Developer") . "<br";
+        echo "<br>";
+
         echo "<h3>Soal No 3 Palindrome </h3>";
         /*Soal No 3
         Palindrome Buatlah sebuah function yang menerima parameter berupa string yang mengecek apakah string tersebut sebuah palindrome atau bukan. Palindrome adalah sebuah kata atau kalimat yang jika dibalik akan memberikan kata yang sama contohnya: katak, civic. Jika string tersebut palindrome maka akan mengembalikan nilai true, sedangkan jika bukan palindrome akan mengembalikan false. NB: Contoh: palindrome("katak") => output : "true" palindrome("jambu") => output : "false" 
         NB: DILARANG menggunakan built-in function PHP seperti strrev() dll. Gunakan looping seperti biasa atau gunakan function reverseString dari jawaban no.2! */
         // Code function di sini
-        // Hapus komentar di bawah ini untuk jalankan code
         // palindrome("civic") ; // true
         // palindrome("nababan") ; // true
         // palindrome("jambaban"); // false
