@@ -87,9 +87,23 @@
                 ['003', 'Mouse Genius', 50000, 'Mouse Genius biar lebih pinter', 'genius.jpeg'],
                 ['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
             ];
-
             // Output:
-            
+            foreach($items as $item){
+                $assoArray = [
+                  'id'  => $item[0],
+                  'name' => $item[1],
+                  'price' => $item[2],
+                  'description' => $item[3],
+                  'source' => $item[4]  
+                ];
+                echo "Array ( ";
+                foreach($assoArray as $key => $value){
+                    echo "[$key] => $value"; 
+                }
+                echo " )<br>";
+            }
+
+
             echo "<h3>Soal No 4 Asterix </h3>";
             /*
             Soal No 4
