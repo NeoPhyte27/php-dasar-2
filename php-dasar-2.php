@@ -1,4 +1,3 @@
-dibuat lalu salin kode berikut ini.
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +27,14 @@ dibuat lalu salin kode berikut ini.
             16 - I Love PHP
             18 - I Love PHP
             20- I Love PHP
+            */            
+            // loopingan ascending
+            echo "loopingan ascending<br>";
+            for ($i = 2; $i <= 20; $i += 2) {
+                echo $i . "- I Love PHP<br>";
+            }
 
+            /*
             LOOPING KEDUA
             20 - I Love PHP
             18 - I Love PHP
@@ -40,36 +46,31 @@ dibuat lalu salin kode berikut ini.
             6 - I Love PHP
             4 - I Love PHP
             2 - I Love PHP
-            Lakukan Looping Di Sini
             */
-
-            // loopingan ascending
-            echo "loopingan ascending<br>";
-            for ($i = 2; $i <= 20; $i += 2) {
-                echo $i . "- I Love PHP<br>";
-            }
-
             // loopingan descending
             echo "<br>loopingan descending<br>";
             for ($i = 20; $i >= 0; $i -= 2) {
                 echo $i . "- I Love PHP<br>";
             }
 
-
             echo "<h3>Soal No 2 Looping Array Modulo </h3>";
             /*
             Soal No 2
-            Looping Array Module Carilah sisa bagi dengan angka 5 dari setiap angka pada array berikut. Tampung ke dalam array baru bernama $rest
-            $numbers = [18, 45, 29, 61, 47, 34]; echo "array numbers: ";
-            print_r($numbers);
-            // Lakukan Looping
-            echo "<br>";
-            echo "Array sisa baginya adalah: ";
-            echo "<br>";
-
+            Looping Array Module 
+            Carilah sisa bagi dengan angka 5 dari setiap angka pada array berikut. Tampung ke dalam array baru bernama $rest
             */
+            $numbers = [18, 45, 29, 61, 47, 34]; 
+            echo "array numbers: ";
+            print_r($numbers);
+            echo "<br>";
+            $rest = []; 
+            foreach ($numbers as $number) {
+                $rest[] = $number % 5; 
+            }
+            echo "Array sisa baginya adalah: ";
+            print_r($rest); 
 
-
+            
             echo "<h3> Soal No 3 Looping Asociative Array </h3>";
             /*
             Soal No 3
