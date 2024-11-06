@@ -48,10 +48,27 @@
         Palindrome Buatlah sebuah function yang menerima parameter berupa string yang mengecek apakah string tersebut sebuah palindrome atau bukan. Palindrome adalah sebuah kata atau kalimat yang jika dibalik akan memberikan kata yang sama contohnya: katak, civic. Jika string tersebut palindrome maka akan mengembalikan nilai true, sedangkan jika bukan palindrome akan mengembalikan false. NB: Contoh: palindrome("katak") => output : "true" palindrome("jambu") => output : "false" 
         NB: DILARANG menggunakan built-in function PHP seperti strrev() dll. Gunakan looping seperti biasa atau gunakan function reverseString dari jawaban no.2! */
         // Code function di sini
-        // palindrome("civic") ; // true
-        // palindrome("nababan") ; // true
-        // palindrome("jambaban"); // false
-        // palindrome("racecar"); // true
+        function palindrome($str)
+        {
+            return $str === reverseString($str);
+        }
+        echo "civic : ";
+        echo reverseString("civic"). " => ";
+        echo palindrome("civic") ? "true" : "false"; // true
+        echo "<br>";
+        echo "nababan : ";
+        echo reverseString("nababan"). " => ";
+        echo palindrome("nababan") ? "true" : "false"; // true
+        echo "<br>";
+        echo "jambaban : ";
+        echo reverseString("jambaban"). " => ";
+        echo palindrome("jambaban") ? "true" : "false"; // false
+        echo "<br>";
+        echo "racecar : ";
+        echo reverseString("racecar"). " => ";
+        echo palindrome("racecar") ? "true" : "false"; // true
+        
+
         echo "<h3>Soal No 4 Tentukan Nilai </h3>";
         /*Soal 4
         buatlah sebuah function bernama tentukan_nilai . Di dalam function tentukan_nilai yang menerima parameter berupa integer. dengan ketentuan jika paramater integer lebih besar dari sama dengan 85 dan lebih kecil sama dengan 100 maka akan mereturn String “Sangat Baik” Selain itu jika parameter integer lebih besar sama dengan 70 dan lebih kecil dari 85 maka akan mereturn string “Baik” selain itu jika parameter number lebih besar sama
@@ -62,6 +79,7 @@
         // echo tentukan_nilai(76); //Baik
         // echo tentukan_nilai(67); //Cukup
         // echo tentukan_nilai(43); //Kurang
+        
         ?>
     </body>
 
