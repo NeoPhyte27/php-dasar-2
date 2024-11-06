@@ -15,12 +15,13 @@
         /*Soal No 1
         Greetings Buatlah sebuah function greetings() yang menerima satu parameter berupa string. contoh: greetings("abduh"); Output: "Halo Abduh, Selamat Datang di Garuda Cyber Institute!" */
         // Code function di sini
-        // Hapus komentar untuk menjalankan code!
-        // greetings("Bagas");
-        // greetings("Wahyu");
-        // greetings("nama peserta");
-        
-        echo "<br>";
+        function greetings($name){
+            return "Halp " .ucfirst($name). ", Selamat Datang di Garuda Cyber Institute!";
+        }
+        echo greetings("Bagas"). "<br>";
+        echo greetings("Wahyu"). "<br>";
+        echo greetings("Aldirisky Pratama"). "<br>";
+
         echo "<h3>Soal No 2 Reverse String</h3>";
         /*Soal No 2
         Reverse String
@@ -34,7 +35,8 @@
         "<br>";
         echo "<h3>Soal No 3 Palindrome </h3>";
         /*Soal No 3
-        Palindrome Buatlah sebuah function yang menerima parameter berupa string yang mengecek apakah string tersebut sebuah palindrome atau bukan. Palindrome adalah sebuah kata atau kalimat yang jika dibalik akan memberikan kata yang sama contohnya: katak, civic. Jika string tersebut palindrome maka akan mengembalikan nilai true, sedangkan jika bukan palindrome akan mengembalikan false. NB: Contoh: palindrome("katak") => output : "true" palindrome("jambu") => output : "false" NB: DILARANG menggunakan built-in function PHP seperti strrev() dll. Gunakan looping seperti biasa atau gunakan function reverseString dari jawaban no.2! */
+        Palindrome Buatlah sebuah function yang menerima parameter berupa string yang mengecek apakah string tersebut sebuah palindrome atau bukan. Palindrome adalah sebuah kata atau kalimat yang jika dibalik akan memberikan kata yang sama contohnya: katak, civic. Jika string tersebut palindrome maka akan mengembalikan nilai true, sedangkan jika bukan palindrome akan mengembalikan false. NB: Contoh: palindrome("katak") => output : "true" palindrome("jambu") => output : "false" 
+        NB: DILARANG menggunakan built-in function PHP seperti strrev() dll. Gunakan looping seperti biasa atau gunakan function reverseString dari jawaban no.2! */
         // Code function di sini
         // Hapus komentar di bawah ini untuk jalankan code
         // palindrome("civic") ; // true
